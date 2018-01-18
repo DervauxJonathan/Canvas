@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Bateau</title>
+</head>
+<body>
+  <canvas id="mon_canvas" width="1275" height="620">
+    Votre navigateur ne supporte pas Canvas :(
+  </canvas>
+</body>
+<script type="text/javascript">
+  var c = document.getElementById("mon_canvas");
+  var ctx = c.getContext("2d");
+  // ici, le reste du script
+  ctx.beginPath();
+  ctx.arc(650,400,200,0,Math.PI,false);
+  ctx.fillStyle = "peru";
+  ctx.fill();
+  ctx.beginPath();
+  ctx.rect(650, 100, 15, 300);
+  ctx.fillStyle = "peru";
+  ctx.fill();
+  ctx.closePath();
+
+  ctx.beginPath();
+  ctx.moveTo(680,100);
+  ctx.lineTo(680,370);
+  ctx.lineTo(850,370);
+  ctx.closePath();
+  ctx.fillStyle = "black";
+  ctx.fill();
+
+  ctx.beginPath();
+  ctx.moveTo(640,100);
+  ctx.lineTo(640,370);
+  ctx.lineTo(400,370);
+  ctx.closePath();
+  ctx.fillStyle = "black";
+  ctx.fill();
+
+</script>
+
+</html>
